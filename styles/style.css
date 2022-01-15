@@ -22,6 +22,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   align-items: center;
   gap: 100px;
 }
@@ -180,6 +181,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 } 
 
 .sponsors {
@@ -358,6 +361,10 @@ header {
 
 /* Mobile Styles */
 @media only screen and (max-width: 688px) {
+  header {
+    height: fit-content;
+    width: 100vw;
+  }
   .section-title {
     font-size: 16px;
     margin-bottom: 20px;
@@ -390,6 +397,9 @@ header {
   .nav-title a {
     font-size: 16px;
   }
+  .nav-bar .nav-links li a {
+    font-size: 12px;
+  }
   .hero {
     flex-direction: column;
     justify-content: center;
@@ -420,6 +430,7 @@ header {
   }
   .sponsors-section {
     height: 65px;
+    border: none;
   }
   .sponsors {
     gap: 20px;
@@ -466,7 +477,8 @@ header {
 /* Tablet Devices */
 @media only screen and (min-width: 688px) and (max-width:950px) {
   header {
-    margin-bottom: 0;
+    height: fit-content;
+    width: 100vw;
   }
   .nav-bar {
     padding: 30px 16px;
@@ -505,6 +517,10 @@ header {
   .hero-photo {
     order: 1;
   }
+  .hero-photo img {
+    width: 200px;
+    height: 200px;
+  }
   .hero-description {
     display: flex;
     flex-direction: column;
@@ -513,8 +529,24 @@ header {
     order: 2;
     gap: 20px;
   }
+  .hero-title {
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+    font-size: 18px;
+  }
   .sponsors-section {
     height: 65px;
+    border: none;
+  }
+  .sponsors {
+    gap: 20px;
+  }
+  .sponsors-photo img {
+    height: 17px;
   }
   .product-section {
     width: 100%;
