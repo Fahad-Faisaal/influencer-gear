@@ -67,7 +67,7 @@ body {
 /* Nav-bar */
 header {
   height: 100vh;
-  /* margin-bottom: 69px; */
+  margin-bottom: 69px;
 }
 
 .nav-bar {
@@ -140,4 +140,26 @@ header {
   background-image: url(../images/Circle\ design.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Sponsors Section */
+ .sponsors-section{
+  height: 110px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 100px;
+}
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 61px;
+  flex-wrap: wrap;
+}
+
+.sponsors-photo img {
+  width: 97px;
+  height: 28px;
 }
