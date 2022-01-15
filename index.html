@@ -17,13 +17,19 @@
   <header>
     <!-- Nav-bar -->
     <nav class="container nav-bar">
+      <div class="hamburger-menu">
+        <label for="nav-toggler"><i class="fas fa-bars"></i></label>
+      </div>
+      <input type="checkbox" name="nav-toggler" id="nav-toggler">
       <h2 class="nav-title"><a href="index.html">Influencer products</a></h2>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#products-collection">Products</a></li>
-        <li><a href="">Sign up</a></li>
-        <li><a href="">Log in</a></li>
-        <li><i class="fas fa-search"></i></li>
+        <div class="nav-items">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#products-collection">Products</a></li>
+          <li><a href="">Sign up</a></li>
+          <li><a href="">Log in</a></li>
+          <li><i class="fas fa-search"></i></li>
+        </div> 
         <li><i class="fas fa-shopping-cart"></i></li>
       </ul>
     </nav>
@@ -31,7 +37,7 @@
 
     <!-- Hero section -->
     <section class="hero container">
-      <article>
+      <article class="hero-description">
         <h1 class="hero-title">Start your Journey as Influencer</h1>
         <p class="hero-text">An artist with the right tool is not only a creator, he or she is a influencer also. So grab your gear, roll and start the action.</p>
         <button class="btn">Preebook now <i class="fas fa-arrow-right"></i></button>
@@ -74,244 +80,247 @@
   <!-- End of Sponsors Section -->
   
   <!-- Section 3: Products -->
-  <section class="container" id="products-collection">
+  <section class="container product-section" id="products-collection">
     <h2 class="section-title">Popular Collection</h2>
-    <div class="product-gallery">
-      <div class="product">
-        <figure class="product-photo">
-          <img src="./images/tripod.png" alt="tripod-photo">
-        </figure>
-        <div>
-          <h3 class="product-name">Flex Tripod</h3>
-          <h3 class="product-price">$50.48</h3>
-        </div>
-        <div class="rating-info">
-          <div class="rating-star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star empty"></i>
+    <div class="product-flex-container">
+      <div class="product-gallery">
+        <div class="product">
+          <figure class="product-photo">
+            <img src="./images/tripod.png" alt="tripod-photo">
+          </figure>
+          <div>
+            <h3 class="product-name">Flex Tripod</h3>
+            <h3 class="product-price">$50.48</h3>
+          </div>
+          <div class="rating-info">
+            <div class="rating-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star empty"></i>
+            </div>
+            <div>
+              <span class="rating-point">4.99</span>
+            </div>
           </div>
           <div>
-            <span class="rating-point">4.99</span>
+            <p class="product-feature">Wordwide shifting</p>
+            <p class="product-feature">available</p>
+            <p class="product-feature">Buyers protection possible!</p>
           </div>
         </div>
-        <div>
-          <p class="product-feature">Wordwide shifting</p>
-          <p class="product-feature">available</p>
-          <p class="product-feature">Buyers protection possible!</p>
-        </div>
-      </div>
-      <div class="product">
-        <figure class="product-photo">
-          <img src="./images/mic.png" alt="microphone-photo">
-        </figure>
-        <div>
-          <h3 class="product-name">Microphone</h3>
-          <h3 class="product-price">$125.00</h3>
-        </div>
-        <div class="rating-info">
-          <div class="rating-star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star empty"></i>
+        <div class="product">
+          <figure class="product-photo">
+            <img src="./images/mic.png" alt="microphone-photo">
+          </figure>
+          <div>
+            <h3 class="product-name">Microphone</h3>
+            <h3 class="product-price">$125.00</h3>
+          </div>
+          <div class="rating-info">
+            <div class="rating-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star empty"></i>
+            </div>
+            <div>
+              <span class="rating-point">4.99</span>
+            </div>
           </div>
           <div>
-            <span class="rating-point">4.99</span>
+            <p class="product-feature">Wordwide shifting</p>
+            <p class="product-feature">available</p>
+            <p class="product-feature">Buyers protection possible!</p>
           </div>
         </div>
-        <div>
-          <p class="product-feature">Wordwide shifting</p>
-          <p class="product-feature">available</p>
-          <p class="product-feature">Buyers protection possible!</p>
-        </div>
-      </div>
-      <div class="product">
-        <figure class="product-photo">
-          <img src="./images/airpod.png" alt="airbud-photo">
-        </figure>
-        <div>
-          <h3 class="product-name">Airbuds</h3>
-          <h3 class="product-price">$100.00</h3>
-        </div>
-        <div class="rating-info">
-          <div class="rating-star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star empty"></i>
+        <div class="product">
+          <figure class="product-photo">
+            <img src="./images/airpod.png" alt="airbud-photo">
+          </figure>
+          <div>
+            <h3 class="product-name">Airbuds</h3>
+            <h3 class="product-price">$100.00</h3>
+          </div>
+          <div class="rating-info">
+            <div class="rating-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star empty"></i>
+            </div>
+            <div>
+              <span class="rating-point">4.99</span>
+            </div>
           </div>
           <div>
-            <span class="rating-point">4.99</span>
+            <p class="product-feature">Wordwide shifting</p>
+            <p class="product-feature">available</p>
+            <p class="product-feature">Buyers protection possible!</p>
           </div>
         </div>
-        <div>
-          <p class="product-feature">Wordwide shifting</p>
-          <p class="product-feature">available</p>
-          <p class="product-feature">Buyers protection possible!</p>
-        </div>
-      </div>
-      <div class="product">
-        <figure class="product-photo">
-          <img src="./images/drone.png" alt="drone-photo">
-        </figure>
-        <div>
-          <h3 class="product-name">Drone</h3>
-          <h3 class="product-price">$980.25</h3>
-        </div>
-        <div class="rating-info">
-          <div class="rating-star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star empty"></i>
+        <div class="product">
+          <figure class="product-photo">
+            <img src="./images/drone.png" alt="drone-photo">
+          </figure>
+          <div>
+            <h3 class="product-name">Drone</h3>
+            <h3 class="product-price">$980.25</h3>
+          </div>
+          <div class="rating-info">
+            <div class="rating-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star empty"></i>
+            </div>
+            <div>
+              <span class="rating-point">4.99</span>
+            </div>
           </div>
           <div>
-            <span class="rating-point">4.99</span>
+            <p class="product-feature">Wordwide shifting</p>
+            <p class="product-feature">available</p>
+            <p class="product-feature">Buyers protection possible!</p>
           </div>
         </div>
-        <div>
-          <p class="product-feature">Wordwide shifting</p>
-          <p class="product-feature">available</p>
-          <p class="product-feature">Buyers protection possible!</p>
-        </div>
-      </div>
-      <div class="product">
-        <figure class="product-photo">
-          <img src="./images/lights.png" alt="lights-photo">
-        </figure>
-        <div>
-          <h3 class="product-name">Light Setup</h3>
-          <h3 class="product-price">$1200.00</h3>
-        </div>
-        <div class="rating-info">
-          <div class="rating-star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star empty"></i>
+        <div class="product">
+          <figure class="product-photo">
+            <img src="./images/lights.png" alt="lights-photo">
+          </figure>
+          <div>
+            <h3 class="product-name">Light Setup</h3>
+            <h3 class="product-price">$1200.00</h3>
+          </div>
+          <div class="rating-info">
+            <div class="rating-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star empty"></i>
+            </div>
+            <div>
+              <span class="rating-point">4.99</span>
+            </div>
           </div>
           <div>
-            <span class="rating-point">4.99</span>
+            <p class="product-feature">Wordwide shifting</p>
+            <p class="product-feature">available</p>
+            <p class="product-feature">Buyers protection possible!</p>
+          </div> 
+        </div>
+        <div class="product">
+          <figure class="product-photo">
+            <img src="./images/setup.png" alt="photoshoot-set-photo">
+          </figure>
+          <div>
+            <h3 class="product-name">Photoshoot set</h3>
+            <h3 class="product-price">$820.40</h3>
           </div>
-        </div>
-        <div>
-          <p class="product-feature">Wordwide shifting</p>
-          <p class="product-feature">available</p>
-          <p class="product-feature">Buyers protection possible!</p>
-        </div> 
-      </div>
-      <div class="product">
-        <figure class="product-photo">
-          <img src="./images/setup.png" alt="photoshoot-set-photo">
-        </figure>
-        <div>
-          <h3 class="product-name">Photoshoot set</h3>
-          <h3 class="product-price">$820.40</h3>
-        </div>
-        <div class="rating-info">
-          <div class="rating-star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star empty"></i>
+          <div class="rating-info">
+            <div class="rating-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star empty"></i>
+            </div>
+            <div>
+              <span class="rating-point">4.99</span>
+            </div>
           </div>
           <div>
-            <span class="rating-point">4.99</span>
+            <p class="product-feature">Wordwide shifting</p>
+            <p class="product-feature">available</p>
+            <p class="product-feature">Buyers protection possible!</p>
           </div>
         </div>
-        <div>
-          <p class="product-feature">Wordwide shifting</p>
-          <p class="product-feature">available</p>
-          <p class="product-feature">Buyers protection possible!</p>
-        </div>
-      </div>
-      <div class="product">
-        <figure class="product-photo">
-          <img src="./images/camera.png" alt="camera-photo">
-        </figure>
-        <div>
-          <h3 class="product-name">Blogging Camera</h3>
-          <h3 class="product-price">$250.48</h3>
-        </div>
-        <div class="rating-info">
-          <div class="rating-star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star empty"></i>
+        <div class="product">
+          <figure class="product-photo">
+            <img src="./images/camera.png" alt="camera-photo">
+          </figure>
+          <div>
+            <h3 class="product-name">Blogging Camera</h3>
+            <h3 class="product-price">$250.48</h3>
+          </div>
+          <div class="rating-info">
+            <div class="rating-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star empty"></i>
+            </div>
+            <div>
+              <span class="rating-point">4.99</span>
+            </div>
           </div>
           <div>
-            <span class="rating-point">4.99</span>
+            <p class="product-feature">Wordwide shifting</p>
+            <p class="product-feature">available</p>
+            <p class="product-feature">Buyers protection possible!</p>
           </div>
         </div>
-        <div>
-          <p class="product-feature">Wordwide shifting</p>
-          <p class="product-feature">available</p>
-          <p class="product-feature">Buyers protection possible!</p>
-        </div>
-      </div>
-      <div class="product">
-        <figure class="product-photo">
-          <img src="./images/single-light.png" alt="screen-photo">
-        </figure>
-        <div>
-          <h3 class="product-name">Green Screen</h3>
-          <h3 class="product-price">$25.48</h3>
-        </div>
-        <div class="rating-info">
-          <div class="rating-star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star empty"></i>
+        <div class="product">
+          <figure class="product-photo">
+            <img src="./images/single-light.png" alt="screen-photo">
+          </figure>
+          <div>
+            <h3 class="product-name">Green Screen</h3>
+            <h3 class="product-price">$25.48</h3>
+          </div>
+          <div class="rating-info">
+            <div class="rating-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star empty"></i>
+            </div>
+            <div>
+              <span class="rating-point">4.99</span>
+            </div>
           </div>
           <div>
-            <span class="rating-point">4.99</span>
+            <p class="product-feature">Wordwide shifting</p>
+            <p class="product-feature">available</p>
+            <p class="product-feature">Buyers protection possible!</p>
           </div>
         </div>
-        <div>
-          <p class="product-feature">Wordwide shifting</p>
-          <p class="product-feature">available</p>
-          <p class="product-feature">Buyers protection possible!</p>
-        </div>
-      </div>
-      <div class="product">
-        <figure class="product-photo">
-          <img src="./images/action.png" alt="camera-photo">
-        </figure>
-        <div>
-          <h3 class="product-name">Action Camera</h3>
-          <h3 class="product-price">$350.48</h3>
-        </div>
-        <div class="rating-info">
-          <div class="rating-star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star empty"></i>
+        <div class="product">
+          <figure class="product-photo">
+            <img src="./images/action.png" alt="camera-photo">
+          </figure>
+          <div>
+            <h3 class="product-name">Action Camera</h3>
+            <h3 class="product-price">$350.48</h3>
+          </div>
+          <div class="rating-info">
+            <div class="rating-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star empty"></i>
+            </div>
+            <div>
+              <span class="rating-point">4.99</span>
+            </div>
           </div>
           <div>
-            <span class="rating-point">4.99</span>
+            <p class="product-feature">Wordwide shifting</p>
+            <p class="product-feature">available</p>
+            <p class="product-feature">Buyers protection possible!</p>
           </div>
-        </div>
-        <div>
-          <p class="product-feature">Wordwide shifting</p>
-          <p class="product-feature">available</p>
-          <p class="product-feature">Buyers protection possible!</p>
         </div>
       </div>
     </div>
+    
     <p class="explore-btn-text"><a href="" class="explore-btn">See More <i class="fas fa-arrow-right"></i></a></p>
   </section>
   <!-- End of Products Section -->
@@ -356,7 +365,7 @@
   <!-- Footer -->
   <footer class="footer">
     <h4 class="footer-title">Influencer products</h4>
-    <p class="footer-text">Copyright 	&copy; 2020  influencer products</p>
+    <p class="footer-text copyright-text">Copyright 	&copy; 2020  influencer products</p>
     <p class="footer-text">All rights reserved</p>
     <ul class="footer-icons">
       <li><a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
