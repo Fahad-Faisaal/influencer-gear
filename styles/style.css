@@ -363,7 +363,6 @@ header {
 @media only screen and (max-width: 688px) {
   header {
     height: fit-content;
-    width: 100vw;
   }
   .section-title {
     font-size: 16px;
@@ -478,7 +477,6 @@ header {
 @media only screen and (min-width: 688px) and (max-width:950px) {
   header {
     height: fit-content;
-    width: 100vw;
   }
   .nav-bar {
     padding: 30px 16px;
